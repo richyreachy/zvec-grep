@@ -73,7 +73,7 @@
     "@modelcontextprotocol/node": "2.0.0",
     "@modelcontextprotocol/server": "2.0.0",
     "@vscode/ripgrep": "^1.18.0",
-    "@zvec/zvec": "^0.7.0",
+    "@zvec/zvec": "0.8.0",
     "jsonc-parser": "^3.3.1",
     "rotating-file-stream": "^3.2.10",
     "tree-sitter-wasms": "^0.1.13",

@@ -59,6 +59,11 @@ test("npm package contains and exposes the supported public surface", async (t) 
     assert.ok(paths.has(required), `package is missing ${required}`);
   }
   assert.equal(
+    [...paths.keys()].some((path) => path.startsWith("native/")),
+    false,
+  );
+  assert.equal(paths.has("scripts/build-diskann.mjs"), false);
+  assert.equal(
     [...paths].some(
       ([path]) =>
         path.startsWith("src/") ||
